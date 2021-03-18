@@ -1,13 +1,12 @@
 import { Router } from 'express';
-import UserController from '../controllers/userController';
+import userController from '../controllers/userController';
 
 const router = Router();
 // GEET: /api/user
 
-router.get('/',UserController.getUser)
-router.post('/',UserController.postUser)
-router.patch('/')
-router.delete('/')
+router.get('/GET',userController.getUser);
+router.get('/FFF', userController.fffUser)
+
 
 export default router;
 
